@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form3</title>
+    <style>
+        td {
+            valusresse: 1px solid white;
+        }
+        table{
+            background-color: white;
+        }
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+<form action="form3.html">
+<table>
+    <tr>
+        <td style="text-align: center; background-color: coral"; colspan="2">SỞ THÍCH CỦA BẠN</td>
+    </tr>
+    <tr>
+        <td style="color: blue">Họ và tên</td>
+        <td><input type="text" name="yourname"></td>
+    </tr>
+    <tr>
+        <td style="color: blue">Email</td>
+        <td><input type="text" name="email"></td>
+    </tr>
+    <tr>
+        <td style="color: blue">Sở thích</td>
+        <td>
+            <table>
+               <tr>
+                   <td><input type="checkbox" name="hobby">Thể thao</td>
+                   <td><input type="checkbox" name="hobby">Âm nhạc</td>
+                   <td><input type="checkbox" name="hobby">Đọc sách</td>
+               </tr>
+                <tr>
+                    <td><input type="checkbox" name="hobby">Lướt web</td>
+                    <td><input type="checkbox" name="hobby">Chơi game</td>
+                    <td><input type="checkbox" name="hobby">Điện ảnh</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="hobby">Du lịch</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="botext-align: center">
+            <input type="submit" name="submitform" value="Gửi thông tin">
+            <input type="reset" name="resetform" value="Nhập lại">
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>

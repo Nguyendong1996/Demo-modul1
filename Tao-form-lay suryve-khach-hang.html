@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    select {
+        width: 400px
+    }
+    div{
+        font-size:15px;
+        font-weight:bold;
+    }
+</style>
+<form action="">
+    <h1>Market Research Survey</h1>
+    <hr>
+    <div>What is your age range ?</div>
+    <select name="age">
+        <option value="age">18-24</option>
+        <option value="age">25-35</option>
+        <option value="age">35-44</option>
+        <option value="age">44-55</option>
+    </select>
+    <br>
+    <br>
+    <hr>
+    <div>what is your yearly income range ?</div>
+    <select name="income" id="">
+        <option value="income">$0 - $25,000</option>
+        <option value="income">25,000 - $50,000</option>
+    </select>
+    <br>
+    <br>
+    <div>Gender</div>
+    <input type="radio" name="gender" value="male">Male <br>
+    <input type="radio" name="gender"value="female"> Female <br>
+    <input type="radio" name="gender" value="nobinary"> Nonbinary <br>
+    <input type="radio" name="gender" valube="other">Other
+    <br>
+    <br>
+    <div>Which of the following products have your purchased in the last 2 monthse check all that apply</div>
+    <input type="checkbox" name="products"> Product 1 <br>
+    <input type="checkbox" name="products"> Product 2 <br>
+    <input type="checkbox"name="products"> Product 3
+    <br>
+    <br>
+    <div>How often would you use our new product</div>
+    <input type="radio" name="usd" valube="other">Daily <br>
+    <input type="radio" name="usd" valube="other">Weekly <br>
+    <input type="radio" name="usd" valube="other">Monthly
+    <br>
+    <br>
+    <div>What would you like pay for the new product ?</div>
+    <table>
+    <tr>
+        <td>$</td>
+        <td><input type="text" name="dollars"size="10"></td>
+        <td>.</td>
+        <td><input type="text"name="cents"size="2"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>dollers</td>
+        <td></td>
+        <td>cents</td>
+    </tr>
+    </table>
+    <div>What features would you like to see in the new product.</div>
+    <textarea cols="20px" rows="20px"></textarea>
+
+
+
+</form>
+<body>
+
+</body>
+</html>
