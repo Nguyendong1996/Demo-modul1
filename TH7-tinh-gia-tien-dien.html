@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>Nhập số điện</h1>
+<table>
+<td>
+  <input type="text" id="value">
+</td>
+    <br>
+    <td>
+        <input type="button" value="tính tiền" onclick="rensul()">
+    </td>
+  </table>
+<br>
+<p id="rensul"></p>
+<body>
+
+</body>
+<script>
+    function rensul(){
+    let a = document.getElementById('value').value;
+    document.getElementById('rensul').innerText= 'Tổng Tiền Điện =' + a*2500
+
+    }
+    function init()
+</script>
+
+
+</html>

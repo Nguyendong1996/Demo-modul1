@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td colspan="7">
+            <input type="text" size="42px" id="calculator">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="text">Rad</button>
+        </td>
+        <td>
+            <button type="text"></button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="*">*</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="(">(</button>
+        </td>
+        <td>
+            <button type="text">)</button>
+        </td>
+        <td>
+            <button type="text">%</button>
+        </td>
+        <td>
+            <button onclick="Clear()" >AC</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="text">AND</button>
+        </td>
+        <td>
+            <button type="text">Sin</button>
+        </td>
+        <td>
+            <button type="text">In</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="7">7</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="9">8</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="9">9</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="/">/</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="text">Pi</button>
+        </td>
+        <td>
+            <button type="text">Cos</button>
+        </td>
+        <td>
+            <button type="text">Log</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="4">4</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="5">5</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="6">6</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="*">*</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="text">E</button>
+        </td>
+        <td>
+            <button type="text">Tan</button>
+        </td>
+        <td>
+            <button type="text">Căn</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="1">1</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="2">2</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="3">3</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="-">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="text">ANS</button>
+        </td>
+        <td>
+            <button type="text">AXP</button>
+        </td>
+        <td>
+            <button type="text">X,y</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="0">0</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value=".">.</button>
+        </td>
+        <td>
+            <button onclick="result()">=</button>
+        </td>
+        <td>
+            <button onclick="calculator(this.value)" value="+">+</button>
+        </td>
+    </tr>
+</table>
+
+</body>
+<script>
+    function calculator(value) {
+        let result = document.getElementById("calculator").value
+        document.getElementById("calculator").value = result + value
+
+    }
+    function result(){
+        let result = document.getElementById("calculator").value
+        document.getElementById("calculator").value = eval(result)
+    }
+    function Clear(){
+        document.getElementById("calculator").value = ""
+    }
+
+</script>
+</html>

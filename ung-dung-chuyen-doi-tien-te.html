@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+<tr>
+    <th><label for="Amount">Amount</label></th>
+    <th>From currency</th>
+    <th>To Currency</th>
+    <th></th>
+</tr>
+<tr>
+    <td name="Amount"><input type="text" size="15" name="text" id="Amount"></td>
+    <td><select id="From" name="">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select></td>
+    <td><select id="To" name="" >
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select></td>
+    <td><button onclick="Chuyendoitiente()" type="submit">Convert</button></td>
+</tr>
+    <p id="rensut"></p>
+</table>
+</body>
+<script>
+  function Chuyendoitiente() {
+      let Amount = document.getElementById('Amount').value;
+      let From = document.getElementById('From').value;
+      let To = document.getElementById('To').value;
+      let rensut;
+      if (From == 'VND' && To == 'USD') {
+          rensut = 'rensut:' + (Amount / 23500) + "$";
+      }
+      else if (From == "VND" && To=='VND') {
+          rensut = "rensut:" + (Amount) + "VND";
+      }
+      else if (To == "VND"){
+          rensut = "rensut :" + (Amount *23500) + "VND"
+      }
+      else{
+          rensut = "rensut :" + (Amount) + "$"
+      }
+      document.getElementById("rensut").innerHTML = rensut;
+  }
+
+</script>
+</html>

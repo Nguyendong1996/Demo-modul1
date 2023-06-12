@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="weight" placeholder="nhập cân nặng "> --
+<input type="text" id="height" placeholder="nhập chiều cao">
+<br>
+<br>
+<button onclick="KQ()">result</button>
+<p id="on"> kết quả :</p>
+</body>
+<script>
+    function KQ() {
+        let a = document.getElementById('weight').value
+        let b = document.getElementById('height').value
+        let BIM = a / (b ** 2)
+        if (BIM > 30) {
+            document.getElementById("on").innerHTML = 'Obese'
+        } else if (BIM > 25) {
+            document.getElementById("on").innerHTML = "Overweight"
+        } else if (BIM > 18) {
+            document.getElementById("on").innerHTML = "Normal"
+        } else {
+            document.getElementById('on').innerHTML = "Underweight"
+        }
+
+    }
+</script>
+
+</html>

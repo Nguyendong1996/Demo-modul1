@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhập số a'))
+    let b = parseInt(prompt('nhập số b'))
+    let c = parseInt(prompt('nhập số c'))
+    let denta = (b ** 2 - 4 * a * c)
+    if (a == 0) {
+        if (b == 0 && c == 0) {
+            alert('phương trình vô số nghiệm')
+        } else if (b == 0) {
+            alert('phương trình vô nghiệm')
+        } else {
+            alert('ptrinh có nghiệm là x=' + -c / b)
+        }
+    }
+    else if (denta > 0) {
+        alert('kết quả x1=' + (-b + (Math.sqrt(denta) / (2 * a)))+ 'kết quả x2=' + (-b - (Math.sqrt(denta) / (2 * a))))
+    } else if (denta == 0) {
+        alert('ptrinh có nghiệm kép x1=x2=' + -b / (a * 2))
+    } else {
+        alert('phương trình vô nghiệm')
+    }
+
+</script>
+</body>
+</html>
