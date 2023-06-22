@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = prompt('nhập hàm gồm 10 phần tử')
+    let b = prompt('nhập phần tử cần kiểm tra')
+    let c = true
+    let arr = a.split(",")
+    let i;
+    for (i = 0; i < arr.length; i++) {
+        if (b === arr[i]) {
+            c = true
+            break;
+        }
+    }
+    if (c) {
+        arr.splice(i, 1);
+    }
+    document.write(arr)
+
+</script>
+</html>

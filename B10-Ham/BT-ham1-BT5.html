@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let star = ("Polaris,Aldebaran,Deneb,Vega,Altair,Dubhe,Regulus")
+    let Constellation = ("UrsaMinor,Tarurus,Cygnus,Lyra,Aquila,UrsaMajor,Leo")
+    star = star.split(",")
+    Constellation = Constellation.split(",")
+
+    function search() {
+        let a = prompt("nhập vào tên ngôi sao ")
+        for (let i = 0; i < star.length; i++) {
+            if (star[i] === a) {
+                document.write(Constellation[i])
+                break
+            }
+        }
+
+        for (let j = 0; j < Constellation.length; j++) {
+            if (Constellation[j] === a) {
+                document.write(star[j])
+                break;
+
+            }
+        }
+        document.write("không tìm thấy ngôi sao")
+
+    }
+
+    search()
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập vào số lượng số nguyên tố cần in ra"))
+    let index = 0
+    let num = 0 //ước
+    for (let i = 2; i <= 100000; i++) {
+
+        if (index <= a) {
+            for (let j = 1; j <= i; j++) {
+                if (i % j === 0) {
+                    num++
+                }
+            }
+                if (num === 2) {
+                    document.write(i + "<br>")
+                    index++
+                }
+                num = 0
+            }
+        else{
+            break;
+
+        }
+    }
+
+
+</script>
+
+</body>
+</html>

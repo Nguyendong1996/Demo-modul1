@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let arr = prompt("nhập vào mảng")
+  let a = prompt("nhập vào độ dài mang")
+  let count =0
+  Arr= arr.split(",")
+  Arr.length = a
+  for (let i = 0; i < a; i++) {
+      if(isNaN(Arr[i])===false){
+          count ++
+      }
+  }
+  document.write("mảng &nbsp" + Arr + " &nbsp có &nbsp" + count + "&nbsp ký tự số")
+</script>
+</html>

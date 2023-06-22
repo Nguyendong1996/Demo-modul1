@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =prompt("nhâp vào một  gồm 10 phần tử")
+    let count =0
+    a=a.split(",")
+    for (let i = 0; i < a.length; i++) {
+        if(a[i]>=10){
+            count ++
+        }
+    }
+    document.write("có &nbsp" +  count + "&nbsp số lớn hơn hoặc bằng 10")
+</script>
+</body>
+</html>

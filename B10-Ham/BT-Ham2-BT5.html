@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function MinNumber(value){
+        let Min = arr[0]
+        for (let i = 0; i <arr.length ; i++) {
+            if (Min>arr[i]) {
+                Min=arr[i]
+}
+        }
+        document.write(Min + "là số bé nhất")
+
+    }
+    let arr = prompt("nhập vào một mảng :")
+    arr=arr.split(",")
+    MinNumber(arr)
+</script>
+</body>
+</html>

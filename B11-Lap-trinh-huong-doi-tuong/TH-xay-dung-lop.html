@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class myDate{
+        day
+        month
+        year
+    constructor(day,month,year) {
+        this.day = day
+        this.month = month
+        this.year = year
+    }
+    getDay(){
+            return this.day
+    }
+    setMonth(){
+            return this.month
+    }
+    theYear(){
+            document.write(this.day + "/" +this.month + "/"+ this.year)
+    }
+    }
+    let ay =new myDate(22,4,1996)
+    ay.month = 2;
+   ay.theYear()
+    //let month = ay.setMonth(2)
+    console.log( ay.sgetAMonth())
+
+</script>
+</html>

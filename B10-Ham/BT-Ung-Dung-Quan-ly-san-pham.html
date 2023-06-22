@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Add New Product</h2>
+<div><input type="text" placeholder="New Product" size="43" id="new_product">
+    <button onclick="Product()">Add</button>
+    <button onclick="Update()">Update</button>
+</div>
+<br>
+<br>
+<h2>Display All Product</h2>
+<br>
+<h4>Product name</h4><h4></h4><h4 id =bien_dem></h4>
+<div id="product"></div>
+<script>
+    var a = 0
+    var array = ["Sony Xperia", "Samsung Galaxy", "Nokia 6", "Xiaomi Redmi Note 4", "Apple Iphone 6S", "Xiaomi Mi 5s Plus", "Apple Iphone 8 Plus", "Fujitsu F-04E", "Oppo A71"]
+
+    function displayProduct() {
+        let data = "<table border='0'>"
+        for (let i = 0; i < array.length; i++) {
+            data += "<tr>"
+
+            data += "<td style='width:300px'>" + array[i] + "</td>"
+
+            data += "<td><button onclick='fixProduct(" + i + ")' style='background-color:red'>Edit</button></td>"
+
+            data += "<td><button onclick='deleteProduct(" + i + ")' style='background-color: blue'>Delete</button></td>"
+
+
+            data += "</tr>"
+        }
+        data += "</table>"
+        document.getElementById("product").innerHTML = data
+    }
+
+    displayProduct()
+
+    function Product() {
+        result = document.getElementById("new_product").value
+        let count = confirm("bạn có xác thêm vào")
+        if (count === true) {
+            array.push(result);
+            alert("thêm vào thành công")
+            displayProduct()
+
+        }
+    }
+
+    function fixProduct(value1) {
+        result1 = array[value1]
+        document.getElementById("new_product").value = result1
+        displayProduct()
+        a = value1
+    }
+
+    function Update() {
+        result2 = document.getElementById("new_product").value
+        array[a] = result2
+        let count = confirm("bạn có xác nhận sửa")
+        if (count === true) {
+            displayProduct()
+            alert("Đã sửa thành công !")
+        }
+    }
+
+    function deleteProduct(value) {
+        array.splice(value, 1)
+        let count = confirm("bạn có xác nhận xoá")
+        if (count === true) {
+            alert("Xoá thành công !")
+            displayProduct()
+        }
+    }
+    function bien_dem(){
+        displayProduct()
+        let bien = array.length
+        document.getElementById("bien_dem").innerHTML=bien + "products"
+
+    }
+    bien_dem()
+
+</script>
+
+</body>
+</html>

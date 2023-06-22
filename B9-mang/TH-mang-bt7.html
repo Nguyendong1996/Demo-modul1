@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="Text">
+<input type="button" name="nhập" onclick="input()" value="input">
+<input type="button" onclick='kiemtra()' value="kiemtra">
+
+</body>
+<script>
+    let y = []
+
+    function input() {
+        arr = document.getElementById('Text').value
+        y = arr.split(',')
+    }
+
+    function kiemtra() {
+        let number = true
+        a = prompt('nhập vào số cần kiểm tra')
+        for (let i = 0; i < y.length; i++) {
+            if (a === y[i]) {
+                number = true
+                y.splice(i, 1)
+            }
+
+        }
+        y.push(0)
+        document.write(y)
+    }
+</script>
+</html>

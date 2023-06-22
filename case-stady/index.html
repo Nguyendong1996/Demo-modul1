@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        background-color: #e03708;
+        color: blue;
+    }
+    #money,#return{
+        background-color: aqua;
+    }
+    #oder,#oder_web,#work,#information,#product{
+        background-color: burlywood;
+    }
+
+
+</style>
+<body>
+<h1>Phầm mềm quản lý sản phẩm bán hàng </h1>
+
+<table width="1400" height="500">
+    <tr>
+        <td colspan="5"><h1>Phầm mềm quản lý sản phẩm bán hàng </h1></td>
+
+    </tr>
+<tr>
+        <td><button>Overview</button></td>
+        <td>Hoạt động hôm nay</td>
+    </tr>
+<tr >
+        <td><button onclick="oder()">order</button></td>
+        <td rowspan="2" id="money"><h2>Tiền Bán Hàng :</h2><br><p></p>
+        </td>
+        <td rowspan="2" id="oder"><h2>số đơn hàng :</h2><p></p><br><h2>Số sản phẩm :</h2></td>
+        <td rowspan="2" id=return><h2>Hàng khách trả :</h2><br><p></p></td>
+        <td rowspan="2" id="oder_web"><h2>Đơn hàng web</h2><br><p></p></td>
+    </tr>
+<tr>
+        <td><button>Product</button></td>
+
+    </tr>
+<tr>
+        <td><button>warehouse</button></td>
+        <td rowspan="2"></td>
+        <td rowspan="2"></td>
+        <td rowspan="2"></td>
+        <td rowspan="2"></td>
+    </tr>
+<tr>
+        <td><button>inventory</button></td>
+
+    </tr>
+<tr>
+        <td><button>Sales</button></td>
+        <td rowspan="2" id="work">
+            <h2>Hoạt Động</h2><br>
+            <p>Tiền đơn hàng :</p><p></p><br>
+            <p>số sản phẩm :</p><p></p><br>
+            <p>số sản phẩm :</p><p></p><br>
+        </td>
+        <td rowspan="2" id=information><h2>Thông tin kho</h2><br>
+            <p>Tồn kho :</p><p></p><br>
+            <p>Hết hàng :</p><p></p><br>
+            <p>Sắp hết hàng:</p><p></p><br></td>
+        <td rowspan="2" id="product"><h2>Thông tin sản phẩm</h2><br>
+            <p>chưa làm giá bán:</p><p></p><br>
+            <p>Chưa làm giá mua:</p><p></p><br>
+            <p>Hàng chưa phân loại:</p><p></p><br></td>
+        <td rowspan="2"><table border="1">
+            <tr>
+                <td colspan="2"><h2>Thông tin sản phẩm</h2></td>
+
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td><input type="text" name="" id="a"></td>
+            </tr>
+            <tr>
+                <td>Tên SP</td>
+                <td><input type="text" name="" id="b"></td>
+            </tr>
+            <tr>
+                <td>Ảnh SP</td>
+                <td><input type="text" name="" id="c"></td>
+            </tr>
+            <tr>
+                <td>Giá Nhập</td>
+                <td><input type="text" name="" id="d"></td>
+            </tr>
+            <tr>
+                <td>Giá Bán</td>
+                <td><input type="text" name="" id="e"></td>
+            </tr>
+            <tr>
+                <td>Số lượng</td>
+                <td><input type="text" name="" id="f"></td>
+            </tr>
+        </table></td>
+    </tr>
+<tr>
+        <td><button>profit</button></td>
+
+    </tr>
+    <tr>
+        <td colspan="5"></td>
+
+    </tr>
+</table>
+<!--<table border="1" style="float: right">-->
+<!--    <tr>-->
+<!--        <td colspan="2"><h2>Thông tin sản phẩm</h2></td>-->
+
+<!--    </tr>-->
+<!--<tr>-->
+<!--        <td>ID</td>-->
+<!--        <td><input type="text" name="" id="a"></td>-->
+<!--    </tr>-->
+<!--<tr>-->
+<!--        <td>Tên SP</td>-->
+<!--        <td><input type="text" name="" id="b"></td>-->
+<!--    </tr>-->
+<!--<tr>-->
+<!--        <td>Ảnh SP</td>-->
+<!--        <td><input type="text" name="" id="c"></td>-->
+<!--    </tr>-->
+<!--<tr>-->
+<!--        <td>Giá Nhập</td>-->
+<!--        <td><input type="text" name="" id="d"></td>-->
+<!--    </tr>-->
+<!--<tr>-->
+<!--        <td>Giá Bán</td>-->
+<!--        <td><input type="text" name="" id="e"></td>-->
+<!--    </tr>-->
+<!--<tr>-->
+<!--        <td>Số lượng</td>-->
+<!--        <td><input type="text" name="" id="f"></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<table border="1">-->
+<!--    <tr>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--        <td></td></tr>-->
+<!--</table>-->
+<table border="1" width="500">
+    <tr>
+        <td>ID</td>
+        <td>Tên SP</td>
+        <td>Ảnh SP</td>
+        <td>Giá Nhập</td>
+        <td>Giá Bán</td>
+    </tr>
+</table>
+<script src="caystadi.js">
+    
+</script>
+</body>
+</html>
